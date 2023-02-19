@@ -1,0 +1,100 @@
+body{
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color:#cdd1d1 ;
+    font-family:  sans-serif;
+}
+.container{
+    background-color:#1749a1 ;
+    padding: 10px;
+    color: #cdd1d1;
+    border-radius: 10px;
+
+}
+.logo{
+    height: 50px;
+     
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+a{
+    font-size: 2em;
+    font-style: normal;
+    text-decoration: none;
+    color: #06ADEE;
+
+}
+a:hover{
+    color: #1B2D5A;
+}
+a:active{
+    color: khaki;
+}
+.images{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.images>img{
+width: 30%;
+border-radius: 10px;
+transition: transform .2s;
+}
+.images>img:hover{
+    transform: scale(1.05);
+}
+.footer{
+    margin-top:10px ;
+    height: 400px;
+    background-color: #626e90;
+    bottom: 0;
+    color: white;
+}
+
+.links{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.display{
+    padding-bottom: 300px;
+     
+}
+.shbtn{
+    width: 100%;
+    background-color: #1749a1;
+    padding: 4px;
+    border-radius: 10px;
+    margin: 2px;
+    border: none;
+    height: 2em;
+    color: white;
+    font-family:   sans-serif;
+
+
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+}
+.contact>div{
+    text-align: center;
+}
+.contact-h1{
+    margin: auto;
+    width: 300px;
+    padding: 50px;
+    text-align: center;
+}
+.fa-solid, .fa-brands{
+height: 100px;
+font-size: 100px;
+}
+
