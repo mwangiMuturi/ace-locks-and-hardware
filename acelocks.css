@@ -1,6 +1,5 @@
 body{
-    padding-left: 50px;
-    padding-right: 50px;
+    text-align: justify;
     background-color:#cdd1d1 ;
     font-family:  sans-serif;
 }
@@ -13,6 +12,7 @@ body{
 }
 .logo{
     height: 50px;
+    
      
 }
 .navbar{
@@ -24,7 +24,7 @@ body{
     margin-bottom: 10px;
 }
 a{
-    font-size: 2em;
+    font-size: 3vw;
     font-style: normal;
     text-decoration: none;
     color: #06ADEE;
@@ -40,27 +40,35 @@ a:active{
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+     
 }
-.images>img{
-width: 30%;
-border-radius: 10px;
+.images>div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.images>div>img{
+width: 100%;
+ 
 transition: transform .2s;
 }
-.images>img:hover{
-    transform: scale(1.05);
+.images>div>img:hover{
+    transform: scle(1.05);
 }
 .footer{
     margin-top:10px ;
-    height: 400px;
-    background-color: #626e90;
+    height: 370px;
+    background-color: #06ADEE;
     bottom: 0;
     color: white;
+    text-align: center;
 }
 
 .links{
     display: flex;
     width: 40%;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .display{
@@ -90,11 +98,56 @@ transition: transform .2s;
 .contact-h1{
     margin: auto;
     width: 300px;
-    padding: 50px;
+    padding: 30px;
     text-align: center;
 }
 .fa-solid, .fa-brands{
 height: 100px;
 font-size: 100px;
+color: #1749A1;
+}
+ .fa-solid:hover, .fa-brands:hover{
+    color: #3b5998   ;     
+ }
+ .title{
+    border-left:solid #06ADEE 3px;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
+
+
+
+ @media only screen and (max-width: 600px) {
+a{
+    font-size: 4vw;
+}
+.links{
+    width: 50%;
+}
+.images{
+    flex-direction: column;
+ 
+}
+.images>div{
+    width: 100%;
+}
+.images>div>img{
+    width: 100%;
+    border-radius: 0;
+}
+ .contact{
+    flex-direction: column;
+
+ }
+ .footer{
+    height: 750px;
+ }
+ .visit{
+    margin-bottom: 2px;
+    padding: 10px;
+    background-color: #1B2D5A;
+ }
+ }
