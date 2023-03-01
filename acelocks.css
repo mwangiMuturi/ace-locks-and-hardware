@@ -5,7 +5,7 @@ body{
 }
 .container{
     background-color:#1749a1 ;
-    padding: 10px;
+    padding: 3px;
     color: #cdd1d1;
     border-radius: 10px;
 
@@ -72,15 +72,27 @@ transition: transform .2s;
 }
 
 .display{
-    padding-bottom: 300px;
+    color: salmon;
+    font-size: 30px;
+     background-color: #3a598f;
+    background-position-x: cener;
+    padding-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 150px;
+     background-image: url(images/bkgrd.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+ background-blend-mode: multiply;
+ animation: change 30s infinite step-end;
      
 }
 .shbtn{
-    width: 100%;
+    width: 8em;
     background-color: #1749a1;
     padding: 4px;
-    border-radius: 10px;
     margin: 2px;
+    margin-top: 6px;
     border: none;
     height: 2em;
     color: white;
@@ -118,14 +130,42 @@ color: #1749A1;
 }
 
 
-
+@keyframes change{
+    0%
+    {
+        background-image: url(images/bkgrd.jpg);
+    }
+    20%
+    {
+        background-image: url(images/bckgrd2.jpg);
+    }
+    40%
+    {
+        background-image: url(images/bckgrd3.jpg);
+    }
+    60%
+    {
+        background-image: url(images/lok.jpg);
+    }
+    80%
+    {
+        background-image: url(images/bkgrd.jpg);
+    }
+    100%
+    {
+        background-image: url(images/bckgrd2.jpg);
+    }
+}
 
  @media only screen and (max-width: 600px) {
+    .display{
+        font-size: 1em;
+    }
 a{
-    font-size: 4vw;
+    font-size: 4.5vw;
 }
 .links{
-    width: 50%;
+    width: 60%;
 }
 .images{
     flex-direction: column;
