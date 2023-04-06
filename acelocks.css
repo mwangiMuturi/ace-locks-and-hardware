@@ -2,6 +2,7 @@ body{
     text-align: justify;
     background-color:#cdd1d1 ;
     font-family:  sans-serif;
+    
 }
 .container{
     background-color:#1749a1 ;
@@ -38,7 +39,7 @@ a:active{
 }
 .images{
     display: flex;
-    justify-content: space-betwee;
+    justify-content: space-around;
     margin: 10px;
     flex-wrap:wrap;
      
@@ -77,13 +78,14 @@ transition: transform .2s;
 .display{
     
     color: white;
+    text-align: start;
     font-size: 30px;
      background-color: #3a598f;
     background-position-x: cener;
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom:50px;
+    padding-top: 8%;
+    padding-left: 5%;
+    padding-right: 40px;
+    padding-bottom :8%;
      background-image: url(images/wizi2.png);
      background-repeat: no-repeat;
      background-size: cover;
@@ -188,6 +190,10 @@ text-align:start;
 }
 .more{
     display:none;
+    color: #1749a1;
+}
+.cp{
+    font-size: 1.5em;
 }
 /* @keyframes change{
     0%
@@ -247,7 +253,7 @@ a{
      
 }
 .images>div{
-    width: 100%;
+    width: 90%;
 }
 .images>div>img{
     width: 100%;
@@ -264,5 +270,8 @@ a{
     margin-bottom: 2px;
     padding: 10px;
     background-color: #1B2D5A;
+ }
+ .contact-h1{
+    padding: 0px;
  }
  }
