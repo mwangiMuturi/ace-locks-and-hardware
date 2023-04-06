@@ -21,7 +21,7 @@ if (event.target.innerHTML=='Read More'){
   event.target.parentElement.firstElementChild.style.display='none'//childNodes)
   if (mediaQuery.matches) {
     // Then trigger an alert
-    alert('Media Query Matched!')
+   // alert('Media Query Matched!')
     
   event.target.parentElement.previousElementSibling.style.display='none' 
    
@@ -34,7 +34,7 @@ if (event.target.innerHTML=='Read More'){
 } 
 else if (event.target.innerHTML=='Show Less'){
   if (mediaQuery.matches) {
-    alert('Media Query Matched!')
+    //alert('Media Query Matched!')
     event.target.parentElement.previousElementSibling.style.display='inline'
   }
   event.target .previousElementSibling.style.display='none'
